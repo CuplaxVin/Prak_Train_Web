@@ -1,24 +1,157 @@
 <!doctype html>
-<html lang="en">
+<html lang="Indonesia">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latihan Mandiri</title>
     <style>
-      /* style untuk bagian body */
+      /* bagian bodi */
       body {
-        background-color: #f0f0f0;
+        background-color: blueviolet;
         font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        padding-top: 50px;
+        color: aliceblue;
       }
-      h1 {
-        color: #333;
+
+      /* styling untuk h1 dan p didalam header */
+      header h1,
+      header p {
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+      }
+
+      /* styling tabel utama */
+      table {
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+      }
+
+      th {
+        background-color: black;
+      }
+
+      .box-mahasiswa {
+        text-align: center;
+        width: 700px;
+        margin: auto;
+        padding: 20px;
+        border: 3px solid black;
+        background-color: rgb(124, 35, 207);
+      }
+
+      /* bagian konten tabel kedua */
+      .calculation-table {
+        text-align: center;
+        width: 300px;
+        margin: 40px auto;
+      }
+
+      /* styling untuk footer */
+      footer {
+        color: white;
+        text-align: center;
+        padding: 15px;
       }
     </style>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    
+    <header>
+      <h1>Tabel Mahasiswa</h1>
+      <p>
+        Berikut adalah tabel yang berisi data mahasiswa, termasuk nama, NIM,
+        mata kuliah, nilai, dan status kelulusan.
+      </p>
+    </header>
+
+    <!-- Tabel utama konten -->
+    <main>
+      <section>
+        <table class="box-mahasiswa">
+          <!-- table header -->
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>NIM</th>
+              <th>Mata Kuliah</th>
+              <th>Nilai</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Andi</td>
+              <td>123456</td>
+              <td>Matematika</td>
+              <td>85</td>
+              <td>Lulus</td>
+            </tr>
+            <tr>
+              <td>Soleh</td>
+              <td>789012</td>
+              <td>Fisika</td>
+              <td>78</td>
+              <td>Lulus</td>
+            </tr>
+            <tr>
+              <td>Siti</td>
+              <td>345678</td>
+              <td>Kimia</td>
+              <td>65</td>
+              <td>Lulus</td>
+            </tr>
+            <tr>
+              <td>Rina</td>
+              <td>901234</td>
+              <td>Biologi</td>
+              <td>55</td>
+              <td>Tidak Lulus</td>
+            </tr>
+            <tr>
+              <td>Budi</td>
+              <td>567890</td>
+              <td>Bahasa Indonesia</td>
+              <td>90</td>
+              <td>Lulus</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Tabel kedua konten deskripsi -->
+      <section class="desc-table">
+        <p>
+          Tabel di atas menunjukkan data mahasiswa dengan berbagai mata kuliah
+          dan nilai yang diperoleh. Status kelulusan ditentukan berdasarkan
+          nilai yang diperoleh, di mana nilai 60 ke atas dianggap lulus.
+        </p>
+      </section>
+
+      <!-- bagian tabel kalkulasi -->
+      <section class="calculation-table">
+        <table>
+          <thead>
+            <th>Total Mahasiswa</th>
+            <th>Lulus</th>
+            <th>Tidak Lulus</th>
+          </thead>
+          <tr>
+            <td>5</td>
+            <td>4</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <!-- footer penutup -->
+    <footer>
+      <p>Tabel Mahasiswa 2026 | UPS</p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Box Model</title>
+
+    <style>
+      /* Reset sederhana */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+
+      /* ===== NAVBAR ===== */
+      nav {
+        background: #333;
+        padding: 15px;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 10px 20px;
+        margin: 5px;
+      }
+
+      /* ===== SECTION ===== */
+      .section {
+        margin: 40px;
+        padding: 30px;
+        border: 2px solid #ddd;
+      }
+
+      /* ===== CARD ===== */
+      .card {
+        width: 300px;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px 0;
+        background: #f4f4f4;
+      }
+
+      /* ===== BUTTON ===== */
+      .btn {
+        padding: 12px 25px;
+        border: 2px solid black;
+        margin-top: 15px;
+        background: #eee;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Artikel</a>
+      <a href="#">Tutorial</a>
+      <a href="#">Kontak</a>
+    </nav>
+
+    <!-- SECTION -->
+    <section class="section">
+      <h2>Artikel Terbaru</h2>
+
+      <!-- CARD -->
+      <div class="card">
+        <h3>Belajar CSS Box Model</h3>
+        <p>
+          Box model adalah konsep dasar dalam CSS yang menjelaskan bahwa setiap
+          elemen HTML memiliki margin, border, padding, dan content.
+        </p>
+
+        <!-- BUTTON -->
+        <button class="btn">Baca Selengkapnya</button>
+      </div>
+
+      <div class="card">
+        <h3>Belajar Layout Website</h3>
+        <p>
+          Layout website menggunakan margin dan padding untuk mengatur jarak
+          antar elemen agar tampilan lebih rapi.
+        </p>
+
+        <button class="btn">Baca Selengkapnya</button>
+      </div>
+    </section>
+  </body>
+</html>
