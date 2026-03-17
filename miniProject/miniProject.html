@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembuatan Navigation Bar</title>
+    <style>
+      body {
+        background-color: blueviolet;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* permainan navbar */
+      .container {
+        background-color: aliceblue;
+        max-width: 900px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 12px;
+        border: 5px solid black;
+        margin: 0 auto;
+      }
+
+      img {
+        width: 95px;
+
+        padding: 12px;
+
+        border-radius: 150px;
+
+        flex-shrink: 0;
+
+        object-fit: contain;
+      }
+
+      /* pengaturan flebox di navbar */
+      .ul-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 45px;
+      }
+
+      li {
+        list-style: none;
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+        display: inline-block;
+        padding: 5px 10px;
+      }
+
+      a:hover {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <img src="/asset/image/kucing_kacamata.jpg" alt="" />
+        <ul class="ul-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
