@@ -1,57 +1,57 @@
 body {
-        background-color: blueviolet;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+  background-color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-      /* permainan navbar */
-      .container {
-        background-color: aliceblue;
-        max-width: 900px;
-        width: 100%;
+/* permainan navbar */
+.container {
+  background-color: aliceblue;
+  max-width: 900px;
+  width: 100%;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-        padding: 8px;
-        border: 5px solid black;
-        border-radius: 50px;
-        margin: 0 auto;
-      }
+  padding: 8px;
+  border: 5px solid black;
+  border-radius: 50px;
+  margin: 0 auto;
+}
 
-      img {
-        width: 95px;
+img {
+  width: 95px;
 
-        padding: 12px;
+  padding: 12px;
 
-        border-radius: 150px;
+  border-radius: 150px;
 
-        flex-shrink: 0;
+  flex-shrink: 0;
 
-        object-fit: contain;
-      }
+  object-fit: contain;
+}
 
-      /* pengaturan flebox di navbar */
-      .ul-nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 45px;
-      }
+/* pengaturan flebox di navbar */
+.ul-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 45px;
+}
 
-      li {
-        list-style: none;
-        font-weight: bold;
-      }
+li {
+  list-style: none;
+  font-weight: bold;
+}
 
-      a {
-        text-decoration: none;
-        color: black;
-        transition: color 0.3s ease;
-        display: inline-block;
-        padding: 5px 10px;
-      }
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 5px 10px;
+}
 
-      a:hover {
-        color: blueviolet;
-      }
+a:hover {
+  color: blueviolet;
+}
