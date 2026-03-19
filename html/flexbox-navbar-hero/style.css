@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  background-color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* NAVBAR STYLE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.logo{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+span {
+  color: orange;
+}
+
+/* MENU STYLING */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.menu li{
+  transition: 0.2s;
+}
+.menu li:hover{
+  color: orange;
+  cursor: pointer;
+}
+
+/* HERO STYLING */
+.hero {
+  padding: 60px 40px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+
+.hero-text{
+  color:rgb(60, 23, 73) ;
+}
+.hero-text h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.hero-image img {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+button{
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: darkorange;
+}
+
+/* lAYOUTING */
+.hero,
+.navbar {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* RESPONSIBLE ON LAYOUTING*/
+@media (max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-image img{
+    width: 200px;
+  }
+}
